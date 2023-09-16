@@ -1,1 +1,1 @@
-# AIGeneratedImage-NFT-Minter
+# AI NFT Generator

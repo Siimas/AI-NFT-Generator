@@ -1,1 +1,4 @@
 # AI NFT Generator
+
+Contract Address:
+1. `0xB4312b24572F781344a5fc4B7DA0Be90Fc28417c`

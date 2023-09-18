@@ -8,6 +8,9 @@ export default function NFTMinter() {
   const submitHandler = async (e: any) => {
     e.preventDefault();
 
+    console.log('aqui');
+    Buffer.from([0,1,2,3]);
+
     const name = e.target.name.value;
     const desc = e.target.desc.value;
 

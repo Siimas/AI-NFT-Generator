@@ -1,5 +1,4 @@
-import { Buffer } from 'buffer';
-import axios from "axios";
+import axios from 'axios';
 
 export const createImage = async (prompt: string) => {
   console.log("Generating Image...");
@@ -19,10 +18,10 @@ export const createImage = async (prompt: string) => {
     responseType: 'arraybuffer',
   })
 
-  console.log(response);
-
   const type = response.headers['content-type']
   const data = response.data
+
+  let Buffer = require('buffer').Buffer;
 
   const base64data = Buffer.from(data).toString('base64')
   const img = `data:${type};base64,` + base64data // <-- This is so we can render it on the page
